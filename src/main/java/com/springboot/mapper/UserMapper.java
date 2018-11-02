@@ -1,7 +1,10 @@
 package com.springboot.mapper;
 
 import com.springboot.model.User;
+import org.apache.ibatis.annotations.Mapper;
 
+
+@Mapper
 public interface UserMapper {
     int deleteByPrimaryKey(Integer id);
 
