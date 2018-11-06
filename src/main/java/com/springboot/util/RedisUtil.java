@@ -166,6 +166,23 @@ public class RedisUtil {
         }
         return list;
     }
+    /**
+     * 在列表的右侧添加
+     * @param key
+     * @param value
+     * @return
+     */
+    public boolean lremove(final String key,long count,Object value){
+        boolean result=false;
+        try {
+            redisTemplate.opsForList().remove(key,count,value);
+            result=true;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return result;
+    }
+
 
 
     public boolean hmset(String key, Map<String, String> value) {
