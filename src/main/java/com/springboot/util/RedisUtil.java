@@ -205,5 +205,18 @@ public class RedisUtil {
         }
         return result;
     }
-  }
+
+    public boolean   hincre(String testmap, String s) {
+
+        boolean b=false;
+        try {
+
+            redisTemplate.opsForHash().increment(testmap,s,1);
+            b=true;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return b;
+    }
+}
 
