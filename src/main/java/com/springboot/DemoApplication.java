@@ -37,7 +37,8 @@ public class DemoApplication {
 			Cookie cookie=new Cookie("count",count+"");
 			response.addCookie(cookie);
 		}
-		return "您好，现在已经登录了"+count+"次!";
+        System.out.println("我是banch分支提交的代码");
+        return "您好，现在已经登录了"+count+"次!";
 	}
 
 	public static void main(String[] args) {
