@@ -37,7 +37,7 @@ public class DemoApplication {
 			Cookie cookie=new Cookie("count",count+"");
 			response.addCookie(cookie);
 		}
-		return "现在已经登录了"+count+"次!!!";
+		return "现在已经登录了"+count+"次!!";
 	}
 
 	public static void main(String[] args) {
