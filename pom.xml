@@ -76,7 +76,11 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
         </dependency>
-
+		<dependency>
+			<groupId>cn.yueshutong</groupId>
+			<artifactId>spring-boot-starter-current-limiting</artifactId>
+			<version>0.0.2.SNAPSHOOT</version>
+		</dependency>
 		<!-- activemq start -->
 		<!-- mq依赖 -->
 		<!--<dependency>
