@@ -31,6 +31,7 @@ public class StudentController {
         redisUtil.hincre("testmap","1");
 
         System.out.println(redisUtil.hmget("testmap").toString());
+        System.out.println("new_branch_name分支代码修改");
 
         /*User map2 = (User) redisCacheTemplate.opsForValue().get("qwe");
         System.out.println(map2.getName());*/
